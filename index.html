@@ -4,8 +4,9 @@
   <head>
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-
-    <script src="./rotation.js"></script>
+    <script src="./js/collider.js"></script>
+    <script src="./js/target.js"></script>
+    <script src="./js/rotation.js"></script>
 
   </head>
 
@@ -38,7 +39,7 @@
         position="0 -15 -40"
     ></a-entity>
 
-      <!--Trasures-->
+      <!--Treasures-->
         <a-entity
           gltf-model="#treasure"
           scale="15 15 15"
@@ -58,6 +59,12 @@
         position="-15 -30 -40"
         rotation="0 90 0"
         ></a-entity>
+
+        <!--Fish Entity-->
+        <a-entity position="0 0 0" id="fishModels" collider-fish> </a-entity>
+
+        <!--Treasure Entity-->
+        <a-entity position="0 0 0" id="treasureCoins" target-coin> </a-entity>
         
         <!--Turtle-->
         <a-entity
